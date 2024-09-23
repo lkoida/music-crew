@@ -1,0 +1,30 @@
+:root {
+    --primary-dark: #2F2F2FFF;
+    --primary-light: #A9A9A9FF;
+    --base-space: .5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-block: 0;
+    margin-inline: calc(var(--base-space) * 3);
+    padding: 0;
+    color: light-dark(var(--primary-dark), var(--primary-light));
+    background-color: light-dark(var(--primary-light), var(--primary-dark));
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+.mock {
+    display: flex;
+    justify-content: center;
+    text-wrap: balance;
+}
+
+
